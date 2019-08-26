@@ -1,0 +1,64 @@
+\documentclass{article}
+
+\author{John R.}
+\title{An intro to Lables, Refs, and Lists in {\LaTeX}}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This document is about the creation and use of Lables, References, and List in {\LaTeX}.
+
+Section \ref{list} covers lists, ordered and unordered, as well as sub-lists and list enviroments.
+
+Section \ref{lables} covers lables and references in LaTeX and some of their uses.
+
+\section{Lists\label{list}}
+
+To create an ordered/numbered lists in LaTeX first you need to create a list enviroment by calling the `\textbackslash begin' and `\textbackslash end' functions with the `enumerate' argument. Then you can add list items by calling the `\textbackslash item' function within the enumerate tag.
+
+\textbf{Best Movies:}
+
+\begin{enumerate}
+
+\item \textit{2001 A Space Odyssey}
+\item \textit{Casablanca}
+\item \textit{Pulp Fiction}
+\item \textit{The Godfather}
+\item \textit{Apocalypse Now}
+\item \textit{Schindler's List}
+
+\end{enumerate}
+
+To make an unordered list, use the `\textbackslash itemize' function to create an itemized/unordered list enviroment. Create sub-lists by placing begin and end tags between other list items.
+
+\textbf{Grocery List:}
+
+\begin{itemize}
+
+\item Bread
+\item Milk 
+\item Butter
+\item Eggs
+\item Cheese
+\item Apples
+\begin{itemize}
+\item 2 Granny Smith
+\item 2 Fuji
+\end{itemize}
+
+\end{itemize}
+
+\section{Lables and References\label{lables}}
+
+Lables are somewhat akin to id tags in html. They allow you to tag a certain section, table, or list with an arbitrary identifying lable for quick referance in another section. This makes editing various sections easier as LaTeX will automatically update the numbering or ordering scheme accordingly. This can be useful in the event that a section needs moved.
+
+To lable a section use the `\textbackslash label' function. The label argument then becomes the tag by which you can reference the section.   
+
+To see an example of this in action look at the source of the this document. The Lists section is labled `list.' This is useful in the event that I may later wish to place the Lables section before the Lists section. I could move the sections around without having to manually update the section number each time. 
+
+
+\end{document}
+
+
