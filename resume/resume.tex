@@ -1,8 +1,14 @@
 \documentclass{article}
 
-\usepackage{titlesec}
 \usepackage{titling}
 \usepackage[margin=.9in]{geometry}
+
+\usepackage[compact]{titlesec}
+\titlespacing{\section}{0pt}{2ex}{1ex}
+\titlespacing{\subsection}{0pt}{1ex}{0ex}
+\titlespacing{\subsubsection}{0pt}{0.5ex}{0ex}
+
+\pagenumbering{gobble}
 
 \titleformat{\section}
 {\huge\bfseries}
@@ -23,21 +29,16 @@
 {}[———————————]
 
 \renewcommand{\maketitle}{
-\begin{flushright}
+\begin{flushleft}
 {\huge\bfseries
 \theauthor}
 
 \vspace{.25em}
-Pittsburgh, PA
-
-\vspace{.25em}
-johnlradford23@gmail.com
-
-\vspace{.25em}
-https://johnlradford.io 
-
-\end{flushright}
+\textbf{Email:} johnlradford23@gmail.com
+\textbf{Website:} https://johnlradford.io 
+\end{flushleft}
 }
+\vspace{-3em}
 
 \begin{document}
 
@@ -46,212 +47,83 @@ https://johnlradford.io
 
 \maketitle
 
-\section{Overview}
+\section{Education}
 
-I've spent four+ years working as an IT support technician, all the while
-building skills in web/Email hosting, domain registration, scripting, testing,
-automation, as well as front and backend web development. I'm now interested in
-breaking into the software development field. As a computer nerd and home Linux
-user, I enjoy spending my nights writing useful tools (as well as some trivial
-pieces of software) for myself, my friends, and my coworkers. So I figure might
-as well try to get paid for it!
+\noindent
+\textbf{University of Pittsburgh - Greensburg Campus (Graduated: 2017)}
 
-\section{Technical Skills}
+Bachelor of Arts: Humanities Gen., Philosophy/Art History/Classical Literature
 
-\subsection{Languages}
+Minor: Political Science
 
-\subsubsection{Programming Languages}
+\section{Work Experience}
 
-C, Bash, Perl, PHP, Python, SQL
+\subsection{IT Helpdesk Assistant -- University of Pittsburgh Greensburg}
 
-\subsubsection{Markup Languages}
+\noindent
+\textbf{Timeframe: Spring \& Fall Semester 2017}
 
-HTML, Markdown, {\LaTeX}, Mediawiki Markdown
+As a workstudy, I was responsible for assisting students and faculty with
+computing issues, both in person and over the phone. Learned to work with
+networking, printing, and AV equipment. Learned to resolve issues on Mac,
+Windows, and mobile platforms.
 
-\subsection{Web Frameworks}
+\subsection{Customer Support Technician -- Pair Networks, Inc.}
 
-Flask, CGI, Bootstrap
+\noindent
+\textbf{Timeframe: 2018 - Present}
 
-\subsection{CMSs}
+As an overnight support technician for a web hosting company I'm responsible
+for; responding to customer phone calls and Email tickets, live server
+monitoring -- responding to service outages and alerts as they occur (Ex. load
+spikes, high postfix queues, drive failures, and emergency reboots), upgrades
+and moves -- moving accounts, websites, mailboxes, databases, DNS zone files,
+all sorts of configs, etc. between various generation FreeBSD and Linux servers.
 
-WordPress, MediaWiki
+\section{Sample Projects}
 
-\subsection{Operating Systems}
+\noindent
+\textbf{Homemade Server Monitor -- https://monitor.bluesquare23.sh}
 
-FreeBSD, Linux
+Created a homemade server monitoring web application in Python 3, using
+\emph{Flask} as the web-framework, \emph{SQLite} as the database,
+\emph{SQLAlchemy} as the ORM, and \emph{Bootstrap 5} for nearly all of the CSS.
 
-\subsection{Server Technologies}
+\noindent
+\textbf{Random Doggo Web / Slack App -- https://doggo.thefamu.net}
 
-Apache, Nginx, Postfix, Dovecot, MySQL
+Made a website and slack bot using Python \emph{Flask} to request random doggo
+pictures from the random.dog/woof.json API. Implemented handwritten responsive
+CSS. Setup \emph{Pytest} unit testing and homemade bash CI pipeline.
 
-\subsection{Virtualization / Containerization}
+\noindent
+\textbf{Write \& Run Any Language -- https://bluesquare23.sh/WriteAndRun}
 
-Docker, QEMU/KVM, VirtualBox
+Implemented arbitrary code detection and execution textbox. Used \emph{Flask}
+to wrap two powerful APIs; the first, Algorithmia ML API, detect's the language
+and the second, EngineerMans RCE Piston API, executes the arbitrarily submitted
+code.
 
-\subsection{Misc}
+\section{Servers, Languages, and Tools}
 
-Editor: Vim, Shell: Bash, Version Control: Git
+FreeBSD, Linux, C, Bash, Perl, PHP, Python, SQL, Vim, Git, HTML, Markdown,
+{\LaTeX}, Mediawiki Markdown, Flask, CGI, Bootstrap, WordPress, MediaWiki,
+Apache, Nginx, Postfix, Dovecot, MySQL, Docker, QEMU/KVM, VirtualBox 
 
-\section{General Skills}
-
-\subsection{Leadership Experiences}
+\section{Accolades}
 
 \begin{itemize}
-\item Eagle Scout - Troop 66
+\item Eagle Scout, Boy Scouts of America - Troop 66
 
 \item Ex Pluribus Capitibus Supra of the UPG Campus Alliance for Free Thought
 
 \item President of University of Pittsburgh's delegation to the model European Union (2016)
 \end{itemize}
 
-\subsection{Communication Experience}
-
-\begin{itemize}
-\item As a student, I have written hundreds of academic papers for a wide variety 
-of courses, on subjects ranging from International Relations to Medieval English 
-literature.
-
-\item As a support technician, I have responded to thousands of customer Emails about 
-technical and bureaucratic subjects with people from all around the globe.
-
-\item As a coworker, I've effectively communicated with colleagues \& team members, 
-both in person and via messaging applications, to diagnose and resolve technical 
-issues on the fly.
-
-\item As a family member who knows something about computers (as well as in my
-job as a support technicain), I am used to providing live troubleshooting and technical 
-support over the phone (24/7).
-\end{itemize}
-
-\subsection{Creativity / Problem Solving}
-
-\begin{itemize}
-\item As a tinkerer and home computer enthusiast I enjoy building custom internal
-solutions for my home network / server rack.
-
-\item As a web design enthusiast I enjoy building good looking and useful web
-applications that work well on the front and backend.
-
-\item As an amateur hacker and script kiddy I enjoy finding interesting ways 
-around technical restrictions, as well as ways to make software more secure to begin 
-with.
-\end{itemize}
-
-\section{Education}
-
-\textbf{University of Pittsburgh - Greensburg Campus}
-
-\begin{itemize}
-\item Graduated: 2017
-
-\item Major: Humanities Gen., Philosophy/Art History/Classical Literature
-
-\item Minor: Political Science
-
-\item Related Coursework: Technical Writing Classes, General Written and Professional
-Communication Experience, Courses in Math, Public Speaking, Rhetoric, Logic,
-and Heuristics.
-\end{itemize}
-
-\section{Work Experience}
-
-\subsection{IT Helpdesk Assistant -- University of Pittsburgh Greensburg}
-
-\textbf{Timeframe: Sprint \& Fall Semester 2017}
-
-I worked as a workstudy for the University of Pittsburgh at Greensburg where I
-was responsible for assisting students and faculty with computing issues, both
-in person and over the phone. I learned to work with networking, printing, and
-AV equipment. Learned to resolve issues on Mac, Windows, and mobile platforms.
-
-\subsection{Customer Support Technician -- Pair Networks, Inc.}
-
-\textbf{Timeframe: 2018 - Present}
-
-I currently work as an overnight support technician (level 2) for a web hosting
-company on Pittsburgh's southside. My duties involve, answering the phone at
-2am because someone accidentally deleted a WordPress plugin, helping old ladies
-setup their Email clients, kindly doing the needful for our overseas customers,
-blocking RU \& CN IPs by the 0/24, trying to get MySQL to restart, failing,
-tailing the error log, rebooting, fscking my life away, all the while
-delivering a satisfying customer service experience.
-
-\subsubsection{Departments \& Teams} 
-
-\noindent
-\textbf{General Support Department}
-
-The general support department is the foremost front facing customer interface
-for the company. General support staff are responsible for responding to
-tickets via Email and answering incoming phone calls. The type of issues
-handled by this team are very broad, however they typically include; providing
-configuration assistance for Apache and PHP, diagnosing DNS issues, providing
-connection assistance for FTP/SSH/IMAP/POP3/SMTP, providing help with domain
-registration services, help importing/exporting SQL databases, basic site
-optimization assistance, ect..
-
-\vspace{.25em}
-\noindent
-\textbf{Urgent Bolt  Live Server Monitoring Team}
-
-The urgent bold (UB) aka live server monitoring team is responsible for
-watching the Icinga monitoring interface and responding to outages and alerts
-as they occur. A prototypical example is having to respond to a load spike
-caused by excessive malign traffic toward a poorly coded web application. This
-is typically resolved by identifying and then firewalling the bad actors
-responsible for the traffic in order to return the server to stability.
-
-UB team members are also responsible for responding to and diagnosing the
-source of large accumulations of Email, typically caused by spammers
-manipulating web forms or compromising mailboxes.
-
-Lastly, UB members are responsible for, emergency drive / hardware
-replacements, emergency reboots, emergency escalations, and answering the
-doorbell.
-
-\vspace{.5em}
-\noindent
-\textbf{Upgrade \& Moves Department}
-
-At Pair, the upgrade \& moves department is responsible for moving customer
-accounts between various generations of hosting platforms and account types.
-
-I have moved thousands of accounts, websites, mailboxes, databases, DNS zone
-files, all sort of configs, etc. between various generation FreeBSD and Linux
-servers as part of the upgrades and moves team.
-
-\vspace{.5em}
-\noindent
-\textbf{Signups Fraud Detection Team}
-
-The signup and fraud detection team is responsible for manually reviewing the
-signup data of recently created accounts that have been flaged by the automated
-fraud detection systems. We check for inconsistencies between for example; the
-signup's business address and signup's IP address location, as well as checking
-for other signs for fraud.
-
-\vspace{.5em}
-\noindent
-\textbf{Unofficial Scripting}
-
-In certain ways the culture of my job is very \emph{work your own way} as long
-as you get the same results as the rest of us. Everybody there has their own
-shell aliases and custom scripts.
-
-Working overnight I have an abundance of free time. My nightly life now
-consists of about 30\% doing my job and about 50\% writing tools to make my job
-easier (the last 20\% is youtube). I work in an information rich environment
-that is desperately in need of automation and I enjoy writing tools to help
-improve my life and the lives of my coworkers.
-
 \vfill
 
-\begin{tabular}{r}
-\small\today\\
-\end{tabular}
-
 \begin{center}
-John R. -- Resume 
+John Radford's Resume -- \small\today\\
 \end{center}
 
 \end{document}
