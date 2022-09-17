@@ -3,6 +3,15 @@
 \usepackage{titling}
 \usepackage[margin=.9in]{geometry}
 \usepackage{url}
+\usepackage{alltt}
+\usepackage{fancyhdr}
+\usepackage[us,12hr]{datetime}
+\fancypagestyle{plain}{
+\fancyhf{}
+\rfoot{Last Compiled: {\ddmmyyyydate\today} at \currenttime}
+\lfoot{John Radford's Resume}
+\renewcommand{\headrulewidth}{0pt}}
+\pagestyle{plain}
 
 \usepackage[compact]{titlesec}
 \titlespacing{\section}{0pt}{2ex}{1ex}
@@ -69,17 +78,18 @@ computing issues, both in person and over the phone. Learned to work with
 networking, printing, and AV equipment. Learned to resolve issues on Mac,
 Windows, and mobile platforms.
 
-\subsection{Customer Support Technician -- Pair Networks, Inc.}
+\subsection{Support Technician Lvl 2 -- Pair Networks, Inc.}
 
 \noindent
 \textbf{Timeframe: 2018 - Present}
 
-As an overnight support technician for a web hosting company I'm responsible
-for; responding to customer phone calls and Email tickets, live server
-monitoring -- responding to service outages and alerts as they occur (Ex. load
-spikes, high postfix queues, drive failures, and emergency reboots), upgrades
-and moves -- moving accounts, websites, mailboxes, databases, DNS zone files,
-all sorts of configs, etc. between various generation FreeBSD and Linux servers.
+As an overnight support technician for a web hosting company I wear many hats; 
+
+Teams:
+      Support: Responding to customer phone calls and Email tickets.
+      Upgrades \& Moves: Moving accounts, websites, mailboxes, databases, DNS zone files, between between various generation FreeBSD and Linux servers.
+      Urgent: Live server monitoring, responding to service outages and alerts as they occur (Ex. load spikes, high email queues, drive / hardware failures, and emergency reboots)
+      Security: Malware detection, analysis, removal, hands on intrusion point detection, site cleanup, updating, and hardening.
 
 \section{Sample Projects}
 
@@ -122,9 +132,5 @@ Apache, Nginx, Postfix, Dovecot, MySQL, Docker, QEMU/KVM, VirtualBox
 
 \item President of University of Pittsburgh's delegation to the model European Union (2016)
 \end{itemize}
-
-\begin{center}
-John Radford's Resume -- \small\today\\
-\end{center}
 
 \end{document}
