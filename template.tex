@@ -1,0 +1,76 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{csquotes}
+\usepackage[us,12hr]{datetime}
+\usepackage{lastpage}
+
+% Custom Header.
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Monarx Notes}
+\rhead{\thepage}
+
+% Define a new page style for the last page.
+\fancypagestyle{lastpagefooter}{
+  \fancyhf{}
+  \rfoot{Last Compiled: {\mmddyyyydate\today} at \currenttime}
+  \lfoot{Blame Donald Knuth for any {\LaTeX} formatting errors...}
+  \lhead{INSERT HEADER TITLE HERE}
+  \rhead{\thepage}
+}
+
+% Hyperref options.
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    citecolor=blue,
+}
+
+% Block quote styling.
+\renewenvironment{quote}
+  {\list{}{\rightmargin\leftmargin}%
+   \item\relax\small\itshape}
+  {\endlist}
+
+% Custom Title.
+\pretitle{\begin{center}\Huge\bfseries}
+\posttitle{\end{center}}
+\preauthor{\begin{center}\large}
+\postauthor{\end{center}}
+\predate{\begin{center}\large}
+\postdate{\end{center}}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\title{INSERT GLOBAL TITLE HERE}
+\author{John L. Radford}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+$body$
+
+% Set the custom footer for the last page
+\thispagestyle{lastpagefooter}
+
+\end{document}
+
